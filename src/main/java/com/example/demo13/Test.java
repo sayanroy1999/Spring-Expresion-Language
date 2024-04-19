@@ -17,12 +17,16 @@ public class Test {
     @Value("#{T(java.lang.Math).sqrt(25)}")
     private double z;
 
+    @Value("#{8>3}")
+    private boolean isActive;
+
     @Override
     public String toString() {
         return "Test{" +
                 "x=" + x +
                 ", y=" + y +
                 ", z=" + z +
+                ", isActive=" + isActive +
                 ", e=" + e +
                 ", name='" + name + '\'' +
                 '}';
